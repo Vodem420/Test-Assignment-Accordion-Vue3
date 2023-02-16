@@ -15,7 +15,17 @@ export default defineConfig({
     presetWebFonts({
       provider: "google",
       fonts: {
-        pacifico: "Pacifico",
+        montserrat: [
+          {
+            name: "Montserrat",
+            weights: ["400", "500", "600", "700"],
+            italic: true,
+          },
+          {
+            name: "sans-serif",
+            provider: "none",
+          },
+        ],
       },
     }),
   ],

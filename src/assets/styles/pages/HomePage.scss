@@ -1,0 +1,31 @@
+.AccordionSection {
+  max-width: 96%;
+  margin: 0 auto;
+  padding: 1.6rem;
+  background: var(--BgWhite);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02), 0px 4px 17px rgba(0, 0, 0, 0.14),
+    0px 4px 22px rgba(0, 0, 0, 0.12);
+  border-radius: 0.8rem;
+  @include media(reverso-phone) {
+    width: 100%;
+    max-width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #0d2a54;
+  }
+  &__text {
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #0d2a54;
+    background: #faf8f6;
+  }
+}
