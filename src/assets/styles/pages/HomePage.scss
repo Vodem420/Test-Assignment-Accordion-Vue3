@@ -1,7 +1,6 @@
 .AccordionSection {
   max-width: 96%;
-  margin: 0 auto;
-  padding: 1.6rem;
+  margin: 3.2rem auto 0;
   background: var(--BgWhite);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.02), 0px 4px 17px rgba(0, 0, 0, 0.14),
     0px 4px 22px rgba(0, 0, 0, 0.12);
@@ -9,6 +8,7 @@
   @include media(reverso-phone) {
     width: 100%;
     max-width: 60rem;
+    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,11 +21,62 @@
     color: #0d2a54;
   }
   &__text {
-    margin-top: 0.8rem;
+    padding: 1.6rem;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: #0d2a54;
     background: #faf8f6;
+    @include media(reverso-phone) {
+      padding: 2.4rem;
+    }
+    div {
+      @include flex(flex, flex-start);
+    }
+    input[type="radio"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #fff;
+      width: 1.2rem;
+      min-width: 1.2rem;
+      height: 1.2rem;
+      min-height: 1.2rem;
+      margin: 0.4rem 0.8rem 0 0;
+      padding: 0;
+      border: 2px solid #2b41b7;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+    }
+    input[type="radio"]::before {
+      content: "";
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em var(--form-control-color);
+      background-color: #2b41b7;
+    }
+
+    input[type="radio"]:checked::before {
+      transform: scale(1);
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #2b41b7;
+      padding-bottom: 0.8rem;
+    }
+    p {
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: #0d2a54;
+      &:not(:last-child) {
+        padding-bottom: 0.8rem;
+      }
+    }
   }
 }

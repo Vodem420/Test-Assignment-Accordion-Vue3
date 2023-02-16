@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-const isOpen = ref(true);
+const isOpen = ref(false);
 
 const toggleAccordion = function () {
   isOpen.value = !isOpen.value;
@@ -37,9 +37,21 @@ const toggleAccordion = function () {
         />
       </svg>
     </button>
-
-    <div v-show="isOpen" :id="`collapse${_uid}`">
-      <slot name="content" />
-    </div>
+    <Transition>
+      <div v-show="isOpen" :id="`collapse${_uid}`">
+        <slot name="content" />
+      </div>
+    </Transition>
   </div>
 </template>
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

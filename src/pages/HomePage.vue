@@ -1,5 +1,7 @@
 <script setup>
+import { ref } from "vue";
 import Accordion from "../components/accordion.vue";
+const picked = ref("One");
 </script>
 
 <template>
@@ -8,65 +10,152 @@ import Accordion from "../components/accordion.vue";
       <template #title>
         <span class="AccordionSection__title">The analysis</span>
       </template>
+
       <template #content>
-        <p class="AccordionSection__text">
-          <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-          porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-          accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-          itaque consectetur impedit?
-        </p>
+        <div class="AccordionSection__text">
+          <h2>To take into account on user level data</h2>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do you have one user in more than one variant of the same AB test?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Are you users actually getting the treatment we expect them to
+              get?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do we have enough users in our AB test? Are those users
+              representative for the total population?
+            </p>
+          </div>
+        </div>
       </template>
     </accordion>
     <accordion>
       <template #title>
         <span class="AccordionSection__title">Our data</span>
       </template>
+
       <template #content>
-        <p class="AccordionSection__text">
-          <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-          porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-          accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-          itaque consectetur impedit?
-        </p>
-      </template>
-    </accordion>
-    <accordion>
+        <div class="AccordionSection__text">
+          <h2>To take into account on user level data</h2>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do you have one user in more than one variant of the same AB test?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Are you users actually getting the treatment we expect them to
+              get?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do we have enough users in our AB test? Are those users
+              representative for the total population?
+            </p>
+          </div>
+        </div>
+      </template> </accordion
+    ><accordion>
       <template #title>
         <span class="AccordionSection__title">Our study case</span>
       </template>
+
       <template #content>
-        <p class="AccordionSection__text">
-          <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-          porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-          accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-          itaque consectetur impedit?
-        </p>
-      </template>
-    </accordion>
-    <accordion>
+        <div class="AccordionSection__text">
+          <h2>To take into account on user level data</h2>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do you have one user in more than one variant of the same AB test?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Are you users actually getting the treatment we expect them to
+              get?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do we have enough users in our AB test? Are those users
+              representative for the total population?
+            </p>
+          </div>
+        </div>
+      </template> </accordion
+    ><accordion>
       <template #title>
         <span class="AccordionSection__title">Hands on analyzing</span>
       </template>
+
       <template #content>
-        <p class="AccordionSection__text">
-          <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-          porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-          accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-          itaque consectetur impedit?
-        </p>
-      </template>
-    </accordion>
-    <accordion>
+        <div class="AccordionSection__text">
+          <h2>To take into account on user level data</h2>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do you have one user in more than one variant of the same AB test?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Are you users actually getting the treatment we expect them to
+              get?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do we have enough users in our AB test? Are those users
+              representative for the total population?
+            </p>
+          </div>
+        </div>
+      </template> </accordion
+    ><accordion>
       <template #title>
         <span class="AccordionSection__title">Initialization</span>
       </template>
+
       <template #content>
-        <p class="AccordionSection__text">
-          <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-          porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
-          accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
-          itaque consectetur impedit?
-        </p>
+        <div class="AccordionSection__text">
+          <h2>To take into account on user level data</h2>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do you have one user in more than one variant of the same AB test?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Are you users actually getting the treatment we expect them to
+              get?
+            </p>
+          </div>
+          <div>
+            <input name="radio" type="radio" />
+            <p>
+              Do we have enough users in our AB test? Are those users
+              representative for the total population?
+            </p>
+          </div>
+        </div>
       </template>
     </accordion>
   </div>
